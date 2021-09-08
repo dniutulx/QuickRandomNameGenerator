@@ -1,7 +1,5 @@
 
 import random
-true = True
-false = False
 
 def addLetters(array: list, letter, count: int) -> list:
     for x in range(0, count):
@@ -15,7 +13,7 @@ def nameme(length: int, letterBag: list) -> str:
         here = random.randrange(len(letterBag))
         letter = letterBag[here]
         if cap: letter = letter.upper()
-        if letter.isalpha(): cap = false
+        if letter.isalpha(): cap = False
         else: cap = True
         name += letter
         del letterBag[here]
@@ -64,7 +62,7 @@ letters = addLetters(letters, '\'', 2)
 #minLength = int(input(f'how many letters minimum? (1-{str(len(letters))}) '))
 #maxLength = int(input(f'how many letters minimum? ({minLength}-{str(len(letters))}) '))
 
-#second google hit for online python doesn't support fstrings....
+#second google hit for online python doesn't yet support fstrings
 minLength = int(input('how many letters minimum? (1-'+ str(len(letters))+') '))
 maxLength = int(input('how many letters minimum? ('+ str(minLength)+'-'+str(len(letters))+') '))
 
