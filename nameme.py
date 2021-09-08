@@ -25,7 +25,7 @@ def nameme(length: int, letterBag: list) -> str:
 
 # Each line add a number of each "tile" to the bag.
 # To change language or tone, update the numbers for each letter, or add your own characters.
-# letters = addLetters(letters, '{your character here}', {how many to add}')
+# letters = addLetters(letters, '{your character here}', {how many to add})
 
 letters = []
 letters = addLetters(letters, 'a', 9)
